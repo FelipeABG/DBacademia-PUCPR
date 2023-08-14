@@ -1,6 +1,6 @@
 ANÁLISE DE REQUISITOS DO BANCO DE DADOS (ACADEMIA):
 
-1-Alunos
+1-Alunos:
     - Nome
     - CPF
     - Telefone
@@ -11,7 +11,7 @@ ANÁLISE DE REQUISITOS DO BANCO DE DADOS (ACADEMIA):
     - Tipo de treino 
     - Mensalidade
 
-2-Funcionários
+2-Funcionários:
     - Nome
     - CPF
     - Telefone
@@ -24,38 +24,38 @@ ANÁLISE DE REQUISITOS DO BANCO DE DADOS (ACADEMIA):
     - Data de admissão
     - Matrícula
 
-3-Equipamentos
+3-Equipamentos:
     - Número de série
     - Preço
     - Data de aquisição
     - Tipo de equipamento
     - Preço do reparo
 
-4-Estabelecimento
+4-Estabelecimento:
     - Aluguel
     - Água
     - Luz
     - Internet
 
-5-Pagamentos
+5-Pagamentos:
     - Data de pagamento
     - Valor
     - Forma de pagamento
     - Tipo de pagamento
     - Descrição
 
-6-Avaliações Físicas
+6-Avaliações Físicas:
     - Data da avaliação
     - Peso
     - Altura
     - IMC
 
-7-Catracas
+7-Catracas:
     - Datetime de entrada
     - Datetime de saída
     - Tipo de acesso
 
-8-Aulas
+8-Aulas:
     - Datetime aula
     - Tipo de aula
     - Professor 
