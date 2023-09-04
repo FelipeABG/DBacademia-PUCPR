@@ -1,6 +1,6 @@
 # Objetivo
 
-A nossa rede de academias possui vários estabelecimentos. Cada estabelecimento possui os seus funcionários e alunos. Os funcionários são divididos em professores e administrativos. Os professores são responsáveis por ministrar aulas, criar fichas de treino e realizar avaliações físicas. Os funcionários administrativos são responsáveis por efetuar cobranças. Os alunos têm acesso à musculação, contendo fichas de treino e uma avaliação física obrigatória, além de poderem se matricular em aulas, como spinning, zumba, etc.
+A nossa rede de academias possui vários estabelecimentos. Cada estabelecimento possui os seus funcionários e alunos, além de vendermos produtos. Os funcionários são divididos em professores e administrativos. Os professores são responsáveis por ministrar aulas, criar fichas de treino e realizar avaliações físicas. Os funcionários administrativos são responsáveis por efetuar cobranças e venderem produtos. Os alunos têm acesso à musculação, contendo fichas de treino e uma avaliação física obrigatória, além de poderem se matricular em aulas, como spinning, zumba, etc.
 
 ## Análise de Requisitos do Banco de Dados (Academia)
 
@@ -69,3 +69,9 @@ _Relacionamentos:_
 _Relacionamentos:_
 - Pertencem a alunos.
 - São realizadas por funcionários.
+
+### 8 - Produtos
+- Nome.
+- Tipo.
+- Preço.
+- Quantidade.
