@@ -118,4 +118,9 @@ _Relacionamentos:_
 - Quantidade de alunos por aula.
 - Quantidade de alunos por estabelecimento.
 - Quantidade de cobranças em atraso em um mês.
+- Quantidade de funcionários por cargo por estabelecimento.
+- Quantidade de funcionarios de um estabelicimento.
+- Quantidade de produtos por tipo.
+- Quantidade de produtos por estabelecimento.
+- Quantidade de produtos vendidos por mês.
 
