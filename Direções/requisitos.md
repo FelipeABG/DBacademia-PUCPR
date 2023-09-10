@@ -65,6 +65,7 @@ _Relacionamentos:_
 - Tipo de aula.
 - Horário.
 - Data.
+- ID.
 
 _Relacionamentos:_
 - Possuem professores.
@@ -92,6 +93,8 @@ _Relacionamentos:_
 ### 9 - Planos:
 - Nome.
 - Preço.
+- Tipo.
+- ID.
 
 _Relacionamentos:_
 - São vendidos por funcionários.
@@ -100,4 +103,19 @@ _Relacionamentos:_
 
 
 # Requisitos Funcionais:
+- Média salarial por cargo.
+- Gasto salarial mensal.
+- Gasto total mensal.
+- Receita mensal.
+- Lucro mensal.
+- Idade média dos alunos.
+- Média de peso dos alunos.
+- Quantidade de alunos por plano.
+- Idade média dos funcionários.
+- Receita total por forma de pagamento por mês.
+- Gasto salarial mensal por estabelecimento.
+- Receita por tipo de produto.
+- Quantidade de alunos por aula.
+- Quantidade de alunos por estabelecimento.
+- Quantidade de cobranças em atraso em um mês.
 
