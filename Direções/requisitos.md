@@ -1,6 +1,6 @@
 # Objetivo
 
-A nossa rede de academias possui vários estabelecimentos. Cada estabelecimento possui os seus funcionários e alunos, além de vendermos produtos. Os funcionários são divididos em professores e administrativos. Os professores são responsáveis por ministrar aulas, criar fichas de treino e realizar avaliações físicas. Os funcionários administrativos são responsáveis por efetuar cobranças e venderem produtos. Os alunos têm acesso à musculação, contendo fichas de treino e uma avaliação física obrigatória, além de poderem se matricular em aulas, como spinning, zumba, etc.
+A nossa rede de academias possui vários estabelecimentos. Cada estabelecimento possui os seus funcionários e alunos, além de vendermos produtos. Os funcionários são responsáveis por ministrar aulas, criar fichas de treino ,realizar avaliações físicas, efetuar cobranças e venderem produtos. Os alunos têm acesso à musculação, contendo fichas de treino e uma avaliação física obrigatória, além de poderem se matricular em aulas, como spinning, zumba, etc.
 
 ## Análise de Requisitos do Banco de Dados (Academia)
 
@@ -12,11 +12,12 @@ A nossa rede de academias possui vários estabelecimentos. Cada estabelecimento 
 - ID.
 
 _Relacionamentos:_
-- Possuem professores.
-- Realizam avaliações físicas.
+- Possuem avaliações físicas.
 - Têm fichas de treino.
 - Efetuam cobranças.
 - Participam de aulas.
+- Podem comprar produtos.
+
 
 ### 2 - Funcionários
 - Nome.
@@ -31,25 +32,34 @@ _Relacionamentos:_
 - Ministram aulas.
 - Criam fichas de treino.
 - Realizam avaliações físicas.
-- Podem pertencer a um estabelecimento.
+- Vendem produtos.
+- Realizam cobranças.
+- Pertencem a um estabelecimento.
+
 
 ### 3 - Cobrança
 - Valor.
+- Data de cobrança.
 - Data de vencimento.
-- Data de pagamento.
 - Forma de pagamento.
+- Status.
 - ID.
 
 ### 4 - Ficha de Treino
 - Exercícios.
 - Data de início.
 - Quantidade de dias.
-- ID.
+
 
 ### 5 - Estabelecimento
 - Nome.
 - Endereço.
-- Telefone.
+- Aluguel.
+- ID.
+
+_Relacionamentos:_
+- Possui produtos.
+
 
 ### 6 - Aulas
 - Tipo de aula.
@@ -59,6 +69,7 @@ _Relacionamentos:_
 _Relacionamentos:_
 - Possuem professores.
 - São frequentadas por alunos.
+
 
 ### 7 - Avaliação Física
 - Peso.
@@ -70,8 +81,23 @@ _Relacionamentos:_
 - Pertencem a alunos.
 - São realizadas por funcionários.
 
+
 ### 8 - Produtos
 - Nome.
 - Tipo.
 - Preço.
 - Quantidade.
+- ID.
+
+### 9 - Planos:
+- Nome.
+- Preço.
+
+_Relacionamentos:_
+- São vendidos por funcionários.
+- Podem ser comprados por clientes.
+- Pertencem ao estabelecimento.
+
+
+# Requisitos Funcionais:
+
