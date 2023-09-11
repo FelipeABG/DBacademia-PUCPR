@@ -70,8 +70,17 @@ create table class(
     id int primary key auto_increment not null,
     class_datetime datetime not null,
     class_type enum('spinning', 'zumba', 'pilates') not null,
-    price decimal(5,2) not null,
-)
+    price decimal(5,2) not null
+);
+
+create table membership(
+    id int primary key auto_increment not null,
+    price decimal(8,2) not null,
+    membership_name varchar(45) not null,
+    membership_type enum('mensal', 'trimestral', 'semestral', 'anual') not null,
+    customer_id int,
+    foreign key(customer_id) references customer(id)
+);
 
 create table billing(
     id int primary key auto_increment not null,
@@ -97,11 +106,35 @@ create table products(
     amount smallint(5) not null
 );
 
-create table membership(
-    id int primary key auto_increment not null,
-    price decimal(8,2) not null,
-    membership_name varchar(45) not null,
-    membership_type enum('mensal', 'trimestral', 'semestral', 'anual') not null,
+create table class_has_employee(
+    class_id int,
+    employee_id int,
+    foreign key(class_id) references class(id),
+    foreign key(employee_id) references employee(id),
+    primary key(class_id, employee_id)
+);
+
+create table class_has_customer(
+    class_id int,
     customer_id int,
-    foreign key(customer_id) references customer(id)
+    foreign key(class_id) references class(id),
+    foreign key(customer_id) references customer(id),
+	primary key(class_id, customer_id)
+);
+
+create table place_has_products(
+    place_id int,
+    product_id int,
+    aquisition_date datetime not null,
+    foreign key(place_id) references place(id),
+    foreign key(product_id) references products(id),
+    primary key(place_id, product_id)
+);
+
+create table purchase_has_products(
+    purchase_id int,
+    product_id int,
+    foreign key(purchase_id) references purchase(id),
+    foreign key(product_id) references products(id),
+    primary key(purchase_id, product_id)
 );
