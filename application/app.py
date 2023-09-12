@@ -1,12 +1,8 @@
-from sqlalchemy import create_engine
-from sqlalchemy_utils import database_exists, create_database
-from sqlalchemy.orm import Session
+from models import *
+from services.db import engine
 
-instance = "mysql+pymysql://root:root@localhost:3306/academia"
+def create_db():
+    Base.metadata.create_all(engine)
 
-if not database_exists(instance):
-    create_database(instance)
-
-engine = create_engine(instance)
-
-session = Session(engine)
+if __name__ == '__main__':
+    create_db()
