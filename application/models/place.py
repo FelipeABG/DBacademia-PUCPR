@@ -2,7 +2,7 @@ from models import Base
 from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy import Integer, VARCHAR, DECIMAL, SmallInteger
 
-class place(Base):
+class Place(Base):
     __tablename__ = 'place'
 
     id: Mapped[int] = mapped_column('id', Integer(), primary_key=True, autoincrement=True, nullable=False)

@@ -16,3 +16,4 @@ class Billing(Base):
     purchase_id: Mapped[int] = mapped_column('purchase_id', ForeignKey(Purchase.id), nullable=False)
     membership_id: Mapped[int] = mapped_column('membership_id', ForeignKey(Membership.id), nullable=False)
 
+
