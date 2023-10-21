@@ -318,3 +318,55 @@ insert into purchase_has_products (purchase_id, product_id) values
     (16, 4),
     (17, 5),
     (18, 6);
+
+
+update people
+    set person_name = "Joao"
+    where id = 1;
+
+update billing
+    set due_datetime = "2023-12-31 23:50:00"
+    where payment_method = "pix";
+
+update employee
+    set salary = 2250.00
+    where position = "atendente";
+
+update membership
+    set price = 175.00
+    where membership_type = "mensal";
+
+update products
+    set amount = 150
+    where product_type = "suplemento";
+
+
+
+delete from place_has_products
+    where product_id = 7;
+    
+delete from purchase_has_products
+	where product_id = 7;
+    
+delete from products
+	where product_name = "refrigerante";
+
+delete from class_has_customer
+    where class_id = 6;
+
+delete from class_has_employee
+    where class_id = 6;
+
+delete from billing
+	where class_id = 6;
+
+delete from class
+    where id = 6;
+
+
+    
+    
+    
+    
+    
+    
