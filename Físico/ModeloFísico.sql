@@ -16,7 +16,7 @@ create table place(
     place_name varchar(45) not null,
     rent_price decimal(8,2) not null,
     cep varchar(10) not null, 
-    phone_number smallint(4) not null,
+    place_number smallint(4) not null,
     city varchar(20) not null,
     neighborhood varchar(45) not null,
     street varchar(100) not null,
@@ -76,7 +76,6 @@ create table class(
 create table membership(
     id int primary key auto_increment not null,
     price decimal(8,2) not null,
-    membership_name varchar(45) not null,
     membership_type enum('mensal', 'trimestral', 'semestral', 'anual') not null,
     customer_id int,
     foreign key(customer_id) references customer(id)
