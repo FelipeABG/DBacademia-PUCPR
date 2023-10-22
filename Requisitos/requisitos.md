@@ -103,24 +103,24 @@ _Relacionamentos:_
 
 
 # Requisitos Funcionais:
-- Média salarial por cargo.
-- Gasto salarial mensal.
-- Gasto total mensal.
-- Receita mensal.
-- Lucro mensal.
-- Idade média dos alunos.
-- Média de peso dos alunos.
-- Quantidade de alunos por plano.
-- Idade média dos funcionários.
-- Receita total por forma de pagamento por mês.
+- Média salarial por cargo na rede.
+- Gasto salarial mensal na rede.
+- Gasto total mensal por estabelecimento.
+- Receita por estabelecimento.
+- Lucro por estabelecimento.
+- Idade média dos alunos por estabelecimento.
+- Média de peso dos alunos por estabelecimento.
+- Quantidade de alunos por plano por estabelecimento.
+- Idade média dos funcionários por estabelecimento.
+- Receita total por forma de pagamento por mês por estabelecimento.
 - Gasto salarial mensal por estabelecimento.
-- Receita por tipo de produto.
-- Quantidade de alunos por aula.
+- Receita por tipo de produto vendido por estabelecimento.
+- Quantidade de alunos por aula por estabelecimento.
 - Quantidade de alunos por estabelecimento.
-- Quantidade de cobranças em atraso em um mês.
+- Quantidade de cobranças em atraso por estabelecimento.
 - Quantidade de funcionários por cargo por estabelecimento.
 - Quantidade de funcionarios de um estabelicimento.
 - Quantidade de produtos por tipo.
 - Quantidade de produtos por estabelecimento.
-- Quantidade de produtos vendidos por mês.
+- Quantidade de produtos vendidos por estabelecimento.
 
