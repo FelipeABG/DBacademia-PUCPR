@@ -116,3 +116,27 @@ delimiter $$
         end $$
 delimiter ;
 
+
+
+/* Adiciona automaticamente a data de vencimento como o ultimo dia do ano na tabela billing */
+create trigger add_date before insert on billing
+    for each row 
+        set new.due_datetime = concat_ws("-", convert(year(new.billing_datetime), char), "12-31 23:59:59");
+
+/* Deleta o Treino e a avaliação física do cliente sendo deletado*/ 
+delimiter $$
+	create trigger delete_data before delete on customer 
+		for each row begin
+			
+            delete from workout_plan where customer.id = old.id;
+            delete from physical_assessment where customer.id = old.id;
+            
+        end $$
+delimiter ;
+
+/* */ 
+create trigger change_salary before update on employee
+    for each row
+        update employee
+            set salary = new.salary
+        where position = new.position;
