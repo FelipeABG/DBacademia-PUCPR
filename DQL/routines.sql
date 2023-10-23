@@ -134,7 +134,7 @@ delimiter $$
         end $$
 delimiter ;
 
-/* */ 
+/* Atualiza todos os salarios quando um salario é modificado */ 
 create trigger change_salary before update on employee
     for each row
         update employee
