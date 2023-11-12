@@ -1,5 +1,4 @@
 use academia;
-
 insert into people (person_name, cpf, phone, birth_date) values 
     ("Felipe", "00000000001", "41999845188", "2004-09-10"),
     ("Giuseppe", "00000000002", "41996056632", "2004-01-14"),
