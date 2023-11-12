@@ -68,4 +68,4 @@ start transaction;
         ("2023-12-01 09:00:00", "spinning", 250.00);
     insert into membership (price, membership_type, customer_id) values
         (150.00, "mensal", 40),
-    
+commit;
