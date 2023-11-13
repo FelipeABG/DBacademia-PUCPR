@@ -1,5 +1,5 @@
 from models import Base, Purchase, Products
-from sqlalchemy.orm import Mapped, mapped_column
+from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy import ForeignKey, Integer
 
 class PurchaseHasProducts(Base):

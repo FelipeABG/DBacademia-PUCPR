@@ -11,7 +11,7 @@ from models.place_has_products import PlaceHasProducts
 from models.customer import Customer
 from models.purchase import Purchase
 from models.membership import Membership
-from models.class_has_costumer import ClassHasCustomer
+from models.class_has_customer import ClassHasCustomer
 from models.employee import Employee
 from models.class_has_employee import ClassHasEmployee
 from models.billing import Billing
