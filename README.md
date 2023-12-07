@@ -14,6 +14,7 @@ The following tools have been used in the project:
 
 ### Directions:
 
+- [Database concept](https://github.com/FelipeABG/gym-database/blob/main/requirements/concept.md)
 - [Phase 1](https://github.com/FelipeABG/gym-database/blob/main/requirements/phase1.md)
 - [Phase 2](https://github.com/FelipeABG/gym-database/blob/main/requirements/phase2.md)
 - [Phase 3](https://github.com/FelipeABG/gym-database/blob/main/requirements/phase3.md)
