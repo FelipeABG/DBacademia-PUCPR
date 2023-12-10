@@ -1,6 +1,6 @@
 <h1 align="center">PUCPR Database Project</h1>
 
-<p align="center">This is a university project made with sql to learn the fundamentals of databases.</p>
+<p align="center">This is a university project made with sql to learn the fundamentals of relational databases.</p>
 
 ### Tools
 
